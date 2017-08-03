@@ -5,5 +5,18 @@ pragma solidity ^0.4.11;
  */
  
 contract ERC223ReceivingContract {
-    function tokenFallback(address _from, uint _value, bytes _data);
+     event ERROR(bytes32 idexed);
+     function() payable {
+         ERROR(0x1);
+     }
+     
+     function tokenFallback(address,uint256,bytes)
+     {
+         
+     }
+     
+     function receiveToken(address,uint256,bytes)
+     {
+         
+     }
 }
